@@ -26,3 +26,7 @@
     background-color: var(--secondary);
     margin-inline-end: 2rem;
 }
+
+.variants > *:active {
+    transform: scale(.9);
+}
