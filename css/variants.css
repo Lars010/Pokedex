@@ -1,3 +1,28 @@
 .variants {
     grid-area: variants;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.variants .variant-button {
+    inline-size: 1.87rem;
+    block-size: .5rem;
+}
+
+.variant-button:nth-child(2) {
+    background-color: var(--yellow);
+    margin-inline-end: 1.5rem;
+}
+
+.variant-button:nth-child(3) {
+    background-color: var(--secondary);
+}
+
+.variant-button.is-big {
+    inline-size: 3.25rem;
+    block-size: 3.25rem;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    margin-inline-end: 2rem;
 }

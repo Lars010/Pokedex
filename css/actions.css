@@ -4,5 +4,5 @@
     grid-template-rows: auto auto 1fr;
     gap: 1.5rem;
     overflow: auto;
-    grid-template-areas: 'variants variants' 'search navigaton' 'description navigation';
+    grid-template-areas: 'variants variants' 'search navigation' 'description navigation';
 }
