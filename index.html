@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Pokédex</title>
+</head>
+
+<body>
+  <main class="pokedex is-open" tabindex="0">
+    <section class="pokedex-main" aria-label="Informacion general del Pokemon">
+      <div class="header-shadow">
+        <div class="header">
+          <span class="light is-big is-sky"></span>
+          <span class="light is-red"></span>
+          <span class="light is-yellow"></span>
+          <span class="light is-green"></span>
+        </div>
+      </div>
+      <div class="screen">
+        <div class="screen-border">
+          <span class="red-dot"></span>
+          <span class="red-dot"></span>
+
+          <img src="./images/button.svg" alt="">
+          <div class="screen-safeArea">
+
+          </div>
+        </div>
+      </div>
+      <div class="actions">
+        <div class="variants">variants</div>
+        <form role="search" id="form" class="search">
+          <input type="text" name="id" placeholder="Quien es ese Pokemon?" autocomplete="off">
+        </form>
+        <div class="description">
+          <p>Busca a un pokemon para obtener todas sus caracteristicas</p>
+        </div>
+        <div class="navigation">
+          <button id="next-pokemon" class="navigation-right" aria-label="Siguiente pokemon"></button>
+          <button id="prev-pokemon" class="navigation-left" aria-label="Pokemon anterior"></button>
+          <button id="next-image" class="navigation-down" aria-label="Siguiente imagen del pokemon"></button>
+          <button id="prev-image" class="navigation-up" aria-label="Imagen anterior del pokemon"></button>
+        </div>
+      </div>
+    </section>
+    <div class="cover-front">
+      cover front
+    </div>
+    <section class="cover-back" aria-label="Estadisticas del Pokemon">
+      <div class="stats">
+        stats
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

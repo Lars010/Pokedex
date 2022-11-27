@@ -1,0 +1,59 @@
+.screen {
+    /* border: 3px solid yellow; */
+    /* position: relative; */
+}
+
+.screen-border {
+    border: 3px solid green;
+    padding: 1.5rem;
+    padding-block-end: 2.75rem;
+    border-radius: .25rem;
+    background-color: var(--white);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 2rem 100%, 0 calc(100% - 2.75rem));
+
+}
+
+.screen-border .red-dot {
+    /* border: 1px solid green; */
+    box-sizing: border-box;
+    inline-size: 1rem;
+    block-size: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.screen-border .red-dot:nth-child(1) {
+    background-color: red;
+    position: absolute;
+    left: 152px;
+    bottom: 298px;
+
+}
+
+.screen-border .red-dot:nth-child(2) {
+    background-color: red;
+    position: absolute;
+    left: 184px;
+    bottom: 298px;
+
+}
+
+.screen-border img {
+    position: absolute;
+    inline-size: 1.37rem;
+    block-size: .875rem;
+    bottom: 300px;
+    left: 300px;
+}
+
+.screen-safeArea {
+    padding: 1rem;
+    background-color: #8DB9dc;
+    border-radius: .25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 10rem;
+    box-sizing: border-box;
+    background-size: cover;
+}
