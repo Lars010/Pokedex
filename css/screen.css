@@ -38,7 +38,7 @@
 
 }
 
-.screen-border img {
+.screen-border .button-image {
     position: absolute;
     inline-size: 1.37rem;
     block-size: .875rem;
