@@ -2,6 +2,7 @@ import './charts.js'
 import { setPokemon, setImage } from "./pokedex.js"
 
 const $form = document.querySelector('#form')
+const $random = document.querySelector('#random-button')
 const $next = document.querySelector('#next-pokemon')
 const $prev = document.querySelector('#prev-pokemon')
 const $nextImage = document.querySelector('#next-image')
@@ -11,6 +12,7 @@ const $pokedex = document.querySelector('#pokedex')
 
 
 $form.addEventListener('submit', handleSubmit)
+$random.addEventListener('click', handleRandomPokemon)
 $next.addEventListener('click', handleNextPokemon)
 $prev.addEventListener('click', handlePrevPokemon)
 $nextImage.addEventListener('click', handleNextImage)
@@ -23,6 +25,16 @@ async function handleSubmit(event) {
     const form = new FormData($form)
     const id = form.get('id')
     activePokemon = await setPokemon(id)
+}
+
+async function handleRandomPokemon() {
+     const id = Math.floor(Math.random() * 898) + 1
+     activePokemon = await setPokemon(id)
+
+    // const id = (activePokemon === null || activePokemon.id >= 0 && activePokemon.id <= 898) ? Math.floor(Math.random(activePokemon.id) * 898) : null
+    // activePokemon = await setPokemon(id)
+
+         
 }
 
 async function handleNextPokemon() {

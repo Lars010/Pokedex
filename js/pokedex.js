@@ -66,6 +66,7 @@ export async function setPokemon(id) {
     const pokemon = await findPokemon(id)
     //apagar loader
     loader(false)
+    if (pokemon.sprites && pokemon.sprites.length > 0)
     setImage(pokemon.sprites[0])
     setDescription(pokemon.description)
     speech(`${pokemon.name}. ${pokemon.description}`)
