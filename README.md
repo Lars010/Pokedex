@@ -18,3 +18,7 @@ luego solo se tiene que ingresar un numero en el area de tipeo del 1 - 898 y la 
 luego al lado derecho se mostraran sus estadisticas , al obtener la informacion del pokemon tambien la pokedex procedera a leer y exponerte la informacion del pokemon.
 tambien puedes cambiar de pokemon utilizando las flechas de navegacion.
 las flechas de navegacion superior e inferior sirven para ver las versiones shiny de los pokemon.
+
+
+
+<img src = "https://github.com/Lars010/Pokedex/blob/main/design/Pokedex.jpg">
